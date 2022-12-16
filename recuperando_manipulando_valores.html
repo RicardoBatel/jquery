@@ -13,7 +13,12 @@
     <script>
 
         $(document).ready(()=>{
+            //$('.sexo:checked').val() -- depois de marcar a opção no front
 
+            /*
+            $.each($('.interesse:checked'), (indice, valor)=> {
+                (indice, valor.value)
+            })*/
         })
 
     </script>
@@ -32,6 +37,18 @@
         <option value="3">Rádio</option>
         <option value="4">Outros meios</option>
     </select>
+    <br>
+
+    <p>Sexo:</p>
+    <input type="radio" name="sexo" class="sexo" value="f">Feminino <br>
+    <input type="radio" name="sexo" class="sexo" value="m">Masculino <br>
+    <br>
+
+    <p>Interesse:</p>
+    <input type="checkbox" name="interesse" class="interesse" value="php">PHP <br>
+    <input type="checkbox" name="interesse" class="interesse" value="js">JavaScript <br>
+    <input type="checkbox" name="interesse" class="interesse" value="angular">Angular <br>
+    <input type="checkbox" name="interesse" class="interesse" value="nodejs">NodeJS <br>
     
 </body>
 
