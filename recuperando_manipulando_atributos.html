@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <!--<script src="jquery-3.6.2.min.js"></script>-->
+
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(() => {
+            
+            console.log($('img').attr('src', 'esfera_2.png'))
+            console.log($('img').attr('border', '20'))
+
+            console.log($('div').attr('style', 'background-color: blue; width: 200px; height: 200px;'))
+
+            console.log($('input').attr('value', 'ainda sou input'))
+            console.log($('input').attr('type', 'password'))
+            
+        })
+
+    </script>
+
+</head>
+<body>
+
+    <img src="esfera_1.png" border="5">
+
+    <br>
+
+    <div style="background-color: red; width: 100px; height: 100px;"></div>
+
+    <input type="text" value="Eusou um input">
+    
+</body>
+
+</html>
