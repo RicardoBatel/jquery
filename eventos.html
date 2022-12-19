@@ -25,7 +25,7 @@
         }
 
         .inputSemFoco{
-            background-color: rgb(50, 47, 44);
+            background-color: rgb(216, 215, 213);
         }
     </style>
 
@@ -128,24 +128,14 @@
                 }
             })
 
-            $('#nome').focus((e)=>{
-                console.log('Esse elemento HTML recebeu foco (nome)')
+            $('#nome, #email').focus((e)=>{
+                //console.log('Esse elemento HTML recebeu foco')
                 $(e.target).addClass('inputFocado')
-            })
+            })            
 
-            $('#email').focus((e)=>{
-                console.log('Esse elemento HTML recebeu foco (email)')
-                $(e.target).addClass('inputFocado')
-            })
-
-            $('#nome').blur((e)=>{
-                console.log('Esse elemento HTML perdeu foco (nome)')
-                $(e.target).addClass('inputSemFoco')
-            })
-
-            $('#email').blur((e)=>{
-                console.log('Esse elemento HTML perdeu foco (email)')
-                $(e.target).addClass('inputSemFoco')
+            $('#nome, #email').blur((e)=>{
+                //console.log('Esse elemento HTML perdeu foco')
+                $(e.target).removeClass('inputFocado')
             })
 
             $('#opcao').change((e)=>{
