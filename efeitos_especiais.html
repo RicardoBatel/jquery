@@ -39,7 +39,20 @@
 <script>
     $(document).ready(() =>{
 
+        //fz sumir o elemento com hide(some), show(aparece) e toggle(os dois)
+        $('#btn1').on('click', () => {
+            $('#div1').toggle('slow')
+        })
 
+        //opacidade do elemento fadeOut(desaparece), fadeIn(aparece), fadeToggle(os dois) e fadeTo (leva até um grau definido de opacidade de um elemento)
+        $('#btn2').on('click', () => {
+            $('#div2').fadeToggle(2000)
+        })
+
+        //faz o elemento desaparecer com efeito de slide para cima slideUp(desaparece p/ cima), slideDown(aparece para baixo), slideToggle(os dois)
+        $('#btn3').on('click', () => {
+            $('#div3').slideToggle('slow')
+        })
 
     })
 </script>
@@ -48,17 +61,17 @@
 <body>
     
     <div class="grupo">
-        <button type="button">DIV 1</button>
+        <button id="btn1" type="button">DIV 1</button>
         <div id="div1" class="div div1"></div>
     </div>
 
     <div class="grupo">
-        <button type="button">DIV 1</button>
+        <button id="btn2" type="button">DIV 2</button>
         <div id="div2" class="div div2"></div>
     </div>
 
     <div class="grupo">
-        <button type="button">DIV 1</button>
+        <button id="btn3" type="button">DIV 3</button>
         <div id="div3" class="div div3"></div>
     </div>
 </body>
